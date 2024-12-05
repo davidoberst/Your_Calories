@@ -1,0 +1,786 @@
+body{
+
+    opacity: 0; /* Inicialmente la página está invisible */
+    transition: opacity 1s ease-in-out;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+background:linear-gradient(to right, black, rgb(19, 17, 17) )
+
+
+}
+
+body.loaded {
+    opacity: 1; 
+}
+    
+    
+    *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    }
+    
+    .backbutton{
+
+          
+        width: 90px;
+        height: 72px;
+        justify-content: left;
+       
+        transition: transform 0.3s ease;
+        
+        }
+
+
+        .backbutton:hover{
+            transform: scale(1.2);
+        }
+       
+
+
+     
+ 
+.header{
+
+    justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 140px;
+        
+        padding-bottom: 20px;
+        
+    background:linear-gradient(to right, black, rgb(48, 47, 47) )
+    
+
+
+}
+
+    
+    .logo{
+        
+       
+        height: 390px;
+        width: 390px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        
+        
+    
+    }
+
+  
+    .titulo{
+
+
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+
+
+    }
+
+
+
+
+    .form{
+
+      
+    width: 600px;
+    height: 340px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background:linear-gradient(to bottom, rgb(210, 203, 203), rgb(56, 56, 56) )
+ 
+    }
+
+
+
+    .label1 {
+
+        font-size: 21px;
+       
+
+    }
+
+
+
+
+    .textoo{
+
+    font-size: 20px;
+
+
+    }
+
+
+    .input_altura{
+
+     height: 45px;
+     width: 260px;
+     border: none;
+     border-radius: 10px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     font-size: 18px;
+     background:linear-gradient(to right, black, rgb(38, 38, 38) )
+       
+
+    }
+
+
+    #actividad{
+
+    height: 45px;
+    width: 350px;
+border: none;
+border-radius: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+     color: rgb(0, 0, 0);
+     font-size: 17px;
+
+
+    }
+
+
+    ::placeholder{
+
+
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+     color: rgb(64, 64, 64);
+     font-size: 18px;
+
+
+    }
+
+
+
+    #calcular{
+
+        color: black;
+    border: none;
+    border-radius: 20px;
+   height: 40px;
+   width:140px;
+   font-size: 18px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   cursor: pointer;
+   transition: background-color 0.3 ease;
+   background-color: rgb(225, 255, 0);
+
+   transition: background-color 0.3s ease;
+    }
+
+    #calcular:hover{
+
+        background-color: rgb(150, 136, 10);
+       
+          
+
+
+
+    }
+
+    #actividad{
+
+        color: rgb(64, 64, 64);
+        background:linear-gradient(to right, black, rgb(38, 38, 38) ) 
+        
+
+    }
+
+
+    .parrafo{
+        
+        font-size: 16px;
+      
+       color: rgb(255, 255, 255);
+       
+       text-align: center;
+       
+
+
+    }
+
+
+    .boton{
+       
+margin-left: 0%;
+      width: 140px;
+    height: 140px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+
+    }
+
+    .boton:hover{
+ transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+          
+
+
+    }
+
+
+    #resultado{
+
+   
+        font-size: 22px;
+     
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+
+
+
+    }
+
+  
+
+
+    #rutina{
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+        color:white
+         
+    
+        
+            }
+
+
+
+            #redirect_routine{
+         
+                font-size: 25px;
+         text-align: center;
+         
+         
+         
+
+
+
+            }
+
+    .text2{
+
+
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+    }
+   
+
+
+
+
+ 
+
+.rutina{
+
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    
+
+    }
+
+
+    .descripcion_rutina{
+
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        padding-top: 10px;
+
+    }
+
+
+
+    .container_rutinas {
+        height: 40px;
+        width: 50%;
+        padding: 20px;
+        border-radius: 20px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.607);
+        background: linear-gradient(to right, rgb(17, 16, 16), rgb(38, 38, 38));
+    }
+    
+   
+    .pecho, .espalda, .brazos, .piernas, .abdomen {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+    }
+    
+   
+    .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+        width: 100px;
+        height: 33px;
+        border-radius: 5px;
+        padding-top: 3px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        background-color: rgb(225, 255, 0);
+    }
+    
+    
+    .prueba:hover, .container_espalda:hover, .container_brazos:hover, .container_hombros:hover, .container_abdomen:hover, .container_piernas:hover {
+        background-color: rgb(78, 70, 6);
+    }
+    
+
+
+
+    
+    /* Consultas de medios para pantallas más pequeñas (por ejemplo, móviles) */
+    @media (max-width: 768px) {
+        /* Cambiar el ancho de .container_rutinas al 100% en pantallas pequeñas */
+        .container_rutinas {
+            width: 98%; /* Ocupa un 90% del ancho en móviles */
+            padding-left: 10px; /* Reducir el padding para mejor ajuste */
+            padding-right: 10px;
+        }
+    
+        /* Ajustar los elementos dentro de .container_rutinas */
+        .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+            width: 75px; /* Reducir el tamaño de los botones en móviles */
+            height: 30px; /* Ajustar la altura */
+        }
+    
+        /* Cambiar el tamaño de las fuentes para que se adapten mejor a pantallas pequeñas */
+        .pecho, .espalda, .brazos, .piernas, .abdomen {
+            font-size: 18px; /* Reducir el tamaño de la fuente */
+        }
+    }
+    
+    /* Consultas de medios para pantallas muy pequeñas (como teléfonos en modo vertical) */
+    @media (max-width: 480px) {
+        .container_rutinas {
+            width: 100%; /* Hacer que ocupe el 100% en pantallas aún más pequeñas */
+            padding: 25px; /* Ajustar padding */
+        }
+    
+        /* Hacer los botones más pequeños aún en pantallas muy pequeñas */
+        .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+            width: 60px; /* Reducir más el tamaño */
+            height: 25px; /* Ajustar altura */
+        }
+    
+        /* Ajustar aún más el tamaño de las fuentes */
+        .pecho, .espalda, .brazos, .piernas, .abdomen {
+            font-size: 16px; /* Hacer la fuente más pequeña */
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* Cambiar el ancho de .container_rutinas al 100% en pantallas pequeñas */
+        .container_rutinas {
+            width: 98%; /* Ocupa un 90% del ancho en móviles */
+            padding-left: 10px; /* Reducir el padding para mejor ajuste */
+            padding-right: 10px;
+        }
+    
+        /* Ajustar los elementos dentro de .container_rutinas */
+        .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+            width: 75px; /* Reducir el tamaño de los botones en móviles */
+            height: 35px; /* Ajustar la altura */
+        }
+    
+        /* Cambiar el tamaño de las fuentes para que se adapten mejor a pantallas pequeñas */
+        .pecho, .espalda, .brazos, .piernas, .abdomen {
+            font-size: 18px; /* Reducir el tamaño de la fuente */
+        }
+    }
+
+
+   /* Para pantallas entre 771px y 999px (tabletas y pantallas medianas) */
+@media (min-width: 771px) and (max-width: 999px) {
+    /* Ajustar el ancho de .container_rutinas */
+    .container_rutinas {
+        width: 85%; /* Ajusta el contenedor para pantallas de tamaño mediano */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Ajustar los botones dentro de .container_rutinas */
+    .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+        width: 90px; /* Botones de tamaño moderado */
+        height: 35px; /* Ajustar la altura */
+    }
+
+    /* Cambiar el tamaño de las fuentes */
+    .pecho, .espalda, .brazos, .piernas, .abdomen {
+        font-size: 20px; /* Tamaño de fuente moderado */
+    }
+}
+
+/* Para pantallas entre 1000px y 1353px (pantallas más grandes, tipo escritorio pequeño) */
+@media (min-width: 1000px) and (max-width: 1353px) {
+    /* Ajustar el ancho de .container_rutinas */
+    .container_rutinas {
+        width: 75%; /* Se ajusta a un tamaño más pequeño en pantallas grandes */
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* Ajustar los botones dentro de .container_rutinas */
+    .prueba, .container_espalda, .container_brazos, .container_hombros, .container_abdomen, .container_piernas {
+        width: 100px; /* Botones más grandes */
+        height: 35px; /* Ajustar la altura */
+    }
+
+    /* Cambiar el tamaño de las fuentes */
+    .pecho, .espalda, .brazos, .piernas, .abdomen {
+        font-size: 22px; /* Fuente un poco más grande */
+    }
+}
+
+
+
+.titulopechorutina{
+
+text-align: center;
+color: white;
+padding-bottom: 10px;
+padding-top: 80px;
+font-size: 35px;
+font-weight: bold;
+
+}
+
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid rgb(225, 255, 0);;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+/* Cambiar solo el color de los títulos de las columnas de la tabla */
+.tabla-principiante th {
+    background-color: rgb(225, 255, 0);;
+    color: #000000; /* Cambia el color que desees */
+}
+.tabla-intermedio th {
+    background-color: rgb(225, 255, 0);;
+    color: #000000; /* Cambia el color para la tabla intermedia si quieres */
+}
+
+.avanzado_rutina_pecho{
+
+color: white;
+text-align: center;
+
+}
+
+.principiante_rutina_pecho{
+
+    color: white;
+    text-align: center;
+    
+    }
+
+
+    .recomendaciones_pecho_titulo_principiante{
+
+    
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 25px;
+
+
+
+    }
+
+
+   .recomendaciones_pecho_principiante{
+
+
+
+        color: white;
+        width: 80%;  
+        max-width: 830px; 
+        margin: 0 auto; 
+        line-height: 1.5;
+       
+        
+
+
+    }
+
+
+    .recomendaciones_pecho_titulo_avanzado{
+
+    
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 25px;
+
+
+
+    }
+
+
+   .recomendaciones_pecho_avanzado{
+
+
+
+        color: white;
+        width: 80%;  
+        max-width: 830px; 
+        margin: 0 auto; 
+        line-height: 1.5;
+       
+        
+
+
+    }
+
+    .pecho_a {
+        text-decoration: none; /* Esto elimina el subrayado */
+        color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+    }
+
+  .pruebacolor{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+  .container_espalda_color{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+  .container_brazos_color{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+  .container_hombros_color{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+
+  .container_abdomen_color{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+
+  .container_piernas_color{
+
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.3s ease;
+    
+    background-color: rgb(75, 75, 75);
+
+  }
+
+
+
+
+
+  
+
+  .espalda_a {
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+}
+
+.brazos_a {
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+}
+
+.hombros_a {
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+}
+
+.abdomen_a {
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+}
+
+
+.piernas_a {
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: inherit; /* Esto hará que el enlace herede el color del texto alrededor */
+}
+.ypc{
+
+    text-decoration: none; /* Esto elimina el subrayado */
+    color: yellow;
+
+}
+
+.abdomen_info{
+
+    color: white;
+    width: 90%; 
+    font-size: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    line-height: 1.5;
+
+
+
+}
+
+.resultado_color{
+
+    text-decoration: none; /* Esto elimina el subrayado */
+ 
+
+    color: yellow;
+
+}
+
+.container_rutinas_definicion {
+    height: 40px;
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.607);
+    background: linear-gradient(to right, rgb(17, 16, 16), rgb(38, 38, 38));
+}
+
+.info_defini{
+
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 20px;
+width: 70%;
+font-weight: bold;
+font-size: 20px;
+
+
+
+
+}
+
+
+.info_defini_container{
+
+width: 100%;
+background: linear-gradient(to right, rgb(17, 16, 16), rgb(38, 38, 38));
+justify-content: center;
+
+
+}
+
+
+.about_diet{
+
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 20px;
+    width: 70%;
+    
+    font-size: 20px;
+}    
+
+
+
+.footer{
+
+
+    justify-content: center;
+        align-items: center;
+        display: flex;
+       
+        height: 50px;
+        
+        padding-bottom: 20px;
+        
+    background:linear-gradient(to right, black, rgb(48, 47, 47) )
+    
+
+
+}
+
+
+.footer_text{
+
+color: white;
+padding-top: 20px;
+
+
+
+}
